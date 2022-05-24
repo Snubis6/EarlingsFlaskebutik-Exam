@@ -47,40 +47,75 @@ body{
 
 
 /*  Navigation  */
-nav{    
-    font-size: 3vh;
-    background-color: blueviolet;
-    padding-top: 1.5vh;
-    padding-bottom: 1.5vh;    
-    display: flex;
-    justify-content: space-between;    
+
+.logo-Home img{
+  width: 45px;
+  margin-top: 15%;
+  
 }
-#links-Box a{
-    text-decoration: none;
-    color: white;
-    margin-right: 10vw;        
-}
-#links-Box a:hover{
-    animation: glow-flicker 2s linear both; /*1s ease-in-out infinite alternate*/
+.logo-Home :hover{
+  
+  animation: glow-flicker2 1.5s linear both;
+ 
 }
 
+nav{    
+  font-size: 2.4vh;
+  background-color: rgba(146, 62, 224, 0.37);
+  padding-top: 0.1vh;
+  padding-bottom: 0.1vh;
+  
+}
 #links-Box{
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
 }
-#home-Box{    
-    display: flex;
-    width: 2.5vw;
-    height: 4.5vh;
-    margin-left: 3vw;
-    border-radius: 10%;
+.links{
+  text-decoration: none;
+  color: white;
 }
-#home-Box a:hover{
-    animation: glow2 2s ease-in-out infinite alternate;
-    
+
+
+.links:hover{
+  animation: glow-flicker 1.5s linear both;
 }
 /*  Navigation - END */  
+
+/* Body */
+.main-Box{ 
+  display: flex;
+  justify-content: center;
+  background-image: url("./images/po.png");
+  background-size: contain;
+  background-repeat: repeat;
+  
+}
+#box{  
+  width: 85%;
+  height: 5000px;
+  opacity: 75%;
+  background-color: gray;
+
+}
+.main-Box img{
+  width: 100%;
+  
+}
+
+/* Body - END */
+
+
+/* Footer */
+footer{
+  width: 100%;
+  height: 30vh;
+  background-color: #ff4da6;
+}
+/* Footer - END*/
+
+
   
 /* ****************Home page - END************** */
 
@@ -96,133 +131,225 @@ nav{
 }
 @keyframes glow2 {
     from{
-        background-color: #e60073a8;
-        box-shadow:  0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+        
+        filter: drop-shadow(0 0 10px #e60073);
     }
 }
 @keyframes glow-flicker {
+    
     0% {
-      opacity: 0;
-    }
-    10% {
-      opacity: 0;
-      text-shadow: none;
-    }
-    10.1% {
-      opacity: 1;
-      text-shadow: none;
-    }
-    10.2% {
-      opacity: 0;
-      text-shadow: none;
-    }
-    20% {
-      opacity: 0;
-      text-shadow: none;
-    }
-    20.1% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.25);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      
     }
     20.6% {
-      opacity: 0;
+     
       text-shadow: none;
     }
     30% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     30.1% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.45), 0 0 60px rgba(209, 3, 140, 0.25);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     30.5% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.45), 0 0 60px rgba(209, 3, 140, 0.25);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     30.6% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     45% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     45.1% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.45), 0 0 60px rgba(209, 3, 140, 0.25);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     50% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.45), 0 0 60px rgba(209, 3, 140, 0.25);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     55% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.45), 0 0 60px rgba(209, 3, 140, 0.25);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     55.1% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     57% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     57.1% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.55), 0 0 60px rgba(209, 3, 140, 0.35);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     60% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.55), 0 0 60px rgba(209, 3, 140, 0.35);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     60.1% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     65% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     65.1% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.55), 0 0 60px rgba(209, 3, 140, 0.35), 0 0 100px rgba(209, 3, 140, 0.1);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     75% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.55), 0 0 60px rgba(209, 3, 140, 0.35), 0 0 100px rgba(209, 3, 140, 0.1);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     75.1% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     77% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     77.1% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.55), 0 0 60px rgba(209, 3, 140, 0.4), 0 0 110px rgba(209, 3, 140, 0.2), 0 0 100px rgba(209, 3, 140, 0.1);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     85% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.55), 0 0 60px rgba(209, 3, 140, 0.4), 0 0 110px rgba(209, 3, 140, 0.2), 0 0 100px rgba(209, 3, 140, 0.1);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     85.1% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     86% {
-      opacity: 0;
+      
       text-shadow: none;
     }
     86.1% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.6), 0 0 60px rgba(209, 3, 140, 0.45), 0 0 110px rgba(209, 3, 140, 0.25), 0 0 100px rgba(209, 3, 140, 0.1);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
     }
     100% {
-      opacity: 1;
-      text-shadow: 0 0 30px rgba(209, 3, 140, 0.6), 0 0 60px rgba(209, 3, 140, 0.45), 0 0 110px rgba(209, 3, 140, 0.25), 0 0 100px rgba(209, 3, 140, 0.1);
+      
+      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+    }
+  }
+ 
+  @keyframes glow-flicker2{
+    
+    0% {
+      
+      
+      filter: drop-shadow(0 0 10px #e60073);
+    }
+    20.6% {
+      filter: none;
+      
+    }
+    30% {
+      filter: none;
+      
+    }
+    30.1% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    30.5% {
+      filter: drop-shadow(0 0 10px #e60073);
+     
+    }
+    30.6% {
+      filter: none;
+     
+    }
+    45% {
+      filter: none;
+      
+    }
+    45.1% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    50% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    55% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    55.1% {
+      filter: none;
+      
+    }
+    57% {
+      filter: none;
+      
+    }
+    57.1% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    60% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    60.1% {
+      filter: none;
+      
+    }
+    65% {
+      filter: none;
+      
+    }
+    65.1% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    75% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    75.1% {
+      filter: none;
+      
+    }
+    77% {
+      filter: none;
+      
+    }
+    77.1% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    85% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    85.1% {
+      filter: none;
+      
+    }
+    86% {
+      filter: none;
+      
+    }
+    86.1% {
+      filter: drop-shadow(0 0 10px #e60073);
+      
+    }
+    100% {
+      filter: drop-shadow(0 0 10px #e60073);
+     
     }
   }
 /* Animations - END*/
