@@ -284,6 +284,46 @@ footer{
   
 /* ****************Home page - END************** */
 
+/* ***********************   Products page   ********************** */
+#search-Box-Products{
+  display: block;
+  float: left;
+  width: 100%;
+  margin-left: 27.7vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#product-Contents-Box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 75%;
+  flex-wrap: wrap;
+
+}
+#product-Contents-Box div{
+  
+  height: 400px;
+  flex: 1 0 calc(25% - 10px);
+  margin: 2%;
+  
+}
+
+#b1{
+  background-color: #450e4b;
+}
+#b2{
+  background-color: #e60073;
+}
+#b3{
+  background-color: gold;
+}
+#b4{
+  background-color: green;
+}
+
+/* ***********************Products page - END********************** */
+
 /* Animations */
 
 @keyframes glow-flicker-Txt {
