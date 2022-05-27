@@ -1,8 +1,26 @@
 *{
     margin: 0;
+    
 }
+* p{
+  font-family:'Franklin Gothic Book';
+}
+* a{
+  font-family: 'Franklin Gothic Book';
+}
+* h1{
+  font-family: 'Franklin Gothic Book';
+} 
 body{
     background-color: black;
+}
+@font-face {
+  font-family: 'baskerville_old_face_dregular';
+  src: url('./fonts/baskerville_old_face_d_regular-webfont.woff') format('woff2'),
+       url('./fonts/baskerville_old_face_d_regular-webfont.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
 }
 /* Age verification page */
 #no-Box{
@@ -49,39 +67,38 @@ body{
 /*  Navigation  */
 
 .logo-Home img{
-  width: 45px;
-  
-  margin-right: 3vw;
-  
+  width: 45px;  
+  margin-right: 3vw;  
 }
-.logo-Home :hover{
-  
-  animation: glow-flicker-Boxesnimg 1.5s linear both;
- 
+.logo-Home :hover{  
+  animation: glow-flicker-Boxesnimg 1.5s linear both; 
 }
 
-nav{    
+#links-Box{    
   font-size: 2.4vh;
-  background-color: rgba(146, 62, 224, 0);
+  background-color: #420b47bd;
   padding-top: 0.1vh;
   padding-bottom: 0.1vh;
-
-  
-}
-#links-Box{
   display: flex;
   justify-content: space-around;
-  align-items: center;
-
+  align-items: center; 
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
+
 .links{
   text-decoration: none;
   color: white;
+  
 }
 
 
 .links:hover{
   animation: glow-flicker-Txt 1.5s linear both;
+  text-decoration: underline;
+  color: #450e4b;
+
 }
 /*  Navigation - END */  
 
@@ -115,10 +132,10 @@ nav{
 #content-Box p{
   margin-top: 2vh;
   font-size: 3vh;
+  
 }
 #content-Box h1{
   color: purple;
-  
   font-size: 6.2vh;
 }
 .event-Box{
@@ -172,7 +189,7 @@ footer{
   left: 10vw;
   top: 10vh;
   color: white;
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 #footer-Logo-Box{
   position: absolute;
@@ -194,15 +211,14 @@ footer{
   top: 15vh;
   color: white;
   font-size: 1.5vh;
-  background-color: #e60073;
-  display: flex;
+  
 }
 #newsletterBox-Content{
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
 }
-    
+#newsletterBox-Content h1{margin-top: 2vh;}
+#newsletterBox-Content form{margin-top: 2vh;}
+#newsletterBox-Content button{margin-top: 2vh;}
 
 #footer-Img{
   filter: invert(4%) sepia(28%) saturate(113%) hue-rotate(314deg) brightness(93%) contrast(84%) drop-shadow( 0px -5px 0px #191919);
@@ -213,6 +229,57 @@ footer{
 }
 /* Footer - END*/
 
+/* Modal Box */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 20vh; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  width: 40vw;
+  height: 15vh;
+  border: 1px solid #888;
+  width: 40%;
+  text-align: center;  
+}
+#modal-Text-Box{
+  margin-top: 4.5vh;
+}
+#modal-Text-Box p{
+  margin-top: 1vh;
+}
+
+/* The Close Button */
+.close {
+  display:block;
+  position: relative;
+  color: #aaaaaa;
+  right: 5px;
+  font-size: 28px;
+  font-weight: bold;
+  width: 50px;
+  float: right;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Modal Box - END*/
 
   
 /* ****************Home page - END************** */
@@ -223,7 +290,7 @@ footer{
     
     0% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 15px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
       
     }
     20.6% {
@@ -236,11 +303,11 @@ footer{
     }
     30.1% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     30.5% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     30.6% {
       
@@ -252,15 +319,15 @@ footer{
     }
     45.1% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     50% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     55% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     55.1% {
       
@@ -272,11 +339,11 @@ footer{
     }
     57.1% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     60% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     60.1% {
       
@@ -288,11 +355,11 @@ footer{
     }
     65.1% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     75% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     75.1% {
       
@@ -304,11 +371,11 @@ footer{
     }
     77.1% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     85% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     85.1% {
       
@@ -320,11 +387,11 @@ footer{
     }
     86.1% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6;
     }
     100% {
       
-      text-shadow: 0 0 10px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073;
+      text-shadow: 0 0 10px #fff, 0 0 30px #f5c7f8, 0 0 40px #d18dd6, 0 0 50px #d18dd6, 0 0 60px #d18dd6, 0 0 70px #d18dd6;
     }
   }
  
@@ -333,7 +400,7 @@ footer{
     0% {
       
       
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #f5c7f8);
     }
     20.6% {
       filter: none;
@@ -344,11 +411,11 @@ footer{
       
     }
     30.1% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     30.5% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
      
     }
     30.6% {
@@ -360,15 +427,15 @@ footer{
       
     }
     45.1% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     50% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     55% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     55.1% {
@@ -380,11 +447,11 @@ footer{
       
     }
     57.1% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     60% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     60.1% {
@@ -396,11 +463,11 @@ footer{
       
     }
     65.1% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     75% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     75.1% {
@@ -412,11 +479,11 @@ footer{
       
     }
     77.1% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     85% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     85.1% {
@@ -428,12 +495,14 @@ footer{
       
     }
     86.1% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
       
     }
     100% {
-      filter: drop-shadow(0 0 10px #e60073);
+      filter: drop-shadow(0 0 10px #d18dd6);
      
     }
   }
+
+  
 /* Animations - END*/
