@@ -13,4 +13,14 @@ document.getElementById("No").onclick = function () {
   } 
     
 };
+
+document.getElementById("newsletter-SubmitButton").onclick = function () {
+  
+}
+// window.onload = function() {
+//   if (document.getElementsByClassName("Header").style.display === "flex") {
+//     document.getElementsByClassName("Header").style.display = "none";
+//   }
+// };
+
 };

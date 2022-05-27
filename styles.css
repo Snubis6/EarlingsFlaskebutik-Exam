@@ -62,9 +62,10 @@ body{
 
 nav{    
   font-size: 2.4vh;
-  background-color: rgba(146, 62, 224, 0.37);
+  background-color: rgba(146, 62, 224, 0);
   padding-top: 0.1vh;
   padding-bottom: 0.1vh;
+
   
 }
 #links-Box{
@@ -93,6 +94,7 @@ nav{
   background-image: url("./images/po.png");
   background-size: contain;
   background-repeat: repeat;
+  padding-bottom: 200px;
   
 }
 
@@ -112,19 +114,23 @@ nav{
 }
 #content-Box p{
   margin-top: 2vh;
+  font-size: 3vh;
 }
 #content-Box h1{
   color: purple;
-  text-shadow:  0 0 10px #fff,0 0 20px purple, 0 0 250px #e60073;
+  
+  font-size: 6.2vh;
 }
 .event-Box{
   width: 100%;  
   margin-top: 15vh;
+  margin-bottom: 30vh;
 }
 .article-Box{
   width: 100%;
   height: auto;
   position: relative;
+  margin-bottom: 30vh;
 }
 .content-Image-Article-Box{
   position: absolute;
@@ -142,12 +148,15 @@ nav{
   height: 250px;
   background-color: aqua;
 }
+.instagram-Iframes iframe{
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 
-#instagram-Iframe{
-  flex-direction: row;
-  justify-content: center;
-  display: flex;
 }
+
+
 /* Body - END */
 
 
@@ -158,17 +167,49 @@ footer{
   
   
 }
-footer img{
+#footer-Text-Box{
   position: absolute;
-  width: 100%;
-  /* filter: invert(9%) sepia(31%) saturate(0%) hue-rotate(236deg) brightness(90%) contrast(93%); */
-  
-  top: -50px;
+  left: 10vw;
+  top: 10vh;
+  color: white;
+  font-size: 3vh;
+}
+#footer-Logo-Box{
+  position: absolute;
+  width: 150px;
+  height: auto;
+  left: 46vw;
+  bottom: -30vh;
   
 }
+#footer-Logo-Box img{
+  width: 100%;
+}
+
+#footer-Newsletter-Box{
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  right: 10vw;
+  top: 15vh;
+  color: white;
+  font-size: 1.5vh;
+  background-color: #e60073;
+  display: flex;
+}
+#newsletterBox-Content{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+    
+
 #footer-Img{
   filter: invert(4%) sepia(28%) saturate(113%) hue-rotate(314deg) brightness(93%) contrast(84%) drop-shadow( 0px -5px 0px #191919);
-  
+  position: absolute;
+  width: 100%;  
+  top: -70px;
+
 }
 /* Footer - END*/
 

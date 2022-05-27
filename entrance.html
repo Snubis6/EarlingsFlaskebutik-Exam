@@ -11,14 +11,14 @@
 
 
 <body>
-    <nav>
-        <div id="links-Box">
+    <nav id="links-Box">
+        
             <a class="links" href="#">About beer</a>
             <a class="links" href="#">About us</a>
             <a class="logo-Home" href="./entrance.html"><img src="./images/semple.png" alt="Home" ></img></a>
             <a class="links" href="#">Products</a>
             <a class="links" href="#">Events</a>        
-        </div>      
+            
     </nav>
     <div class="main-Box">
         
@@ -51,31 +51,42 @@
             </div>
             
         </div>
-        <div>
-            <div id="instagram-Iframe">
-                
-                <iframe src="//www.instagram.com/p/Cd1BqirIuo9/embed" width="200" height="200" frameborder="0" scrolling="no" allowtransparency="true" ></iframe>
-                
-                <blockquote class="instagram-media" data-instgrm-version="14">
-                    <a href="https://www.instagram.com/p/Cd8LWi5I4zK/"></a>
-                </blockquote>
-                <script async defer src="//www.instagram.com/embed.js"></script>
-
-                <blockquote class="instagram-media" data-instgrm-version="14">
-                    <a href="https://www.instagram.com/p/Cd8LWi5I4zK/"></a>
-                </blockquote>
-                <script async defer src="//www.instagram.com/embed.js"></script>
-
-                <blockquote class="instagram-media" data-instgrm-version="14">
-                    <a href="https://www.instagram.com/p/Cd8LWi5I4zK/"></a>
-                </blockquote>
-                <script async defer src="//www.instagram.com/embed.js"></script>
-                
+        <div class="instagram-Iframes">
+            <div >                
+                <iframe src="//www.instagram.com/p/Cd8LWi5I4zK/embed" width="230" height="280" frameborder="0" scrolling="no" allowtransparency="true" ></iframe>
+                <iframe src="//www.instagram.com/p/Cds2VwBIbq1/embed" width="230" height="280" frameborder="0" scrolling="no" allowtransparency="true" ></iframe>
+                <iframe src="//www.instagram.com/p/Cd1BqirIuo9/embed" width="230" height="280" frameborder="0" scrolling="no" allowtransparency="true" ></iframe>
+                              
+            </div>
+            <div >
+                <iframe src="//www.instagram.com/p/CdfdjWwKU6-/embed" width="230" height="320" frameborder="0" scrolling="no" allowtransparency="true" ></iframe>
+                <iframe src="//www.instagram.com/p/CdxnP8FIBID/embed" width="230" height="320" frameborder="0" scrolling="no" allowtransparency="true" ></iframe>
+                <iframe src="//www.instagram.com/p/CdvY2-GIn6X/embed" width="230" height="320" frameborder="0" scrolling="no" allowtransparency="true" ></iframe>  
             </div>
         </div>   
     </div>
     <footer>
         <img id="footer-Img" src="./images/Footer.svg"></img>
+        <div id="footer-Text-Box">
+            <p>Erling's Flaskebutik Aarhus Aps</p><br>
+            <p>Mejlgade 51D</p><br>
+            <p>8000 Aarhus</p><br>
+            <p>CVR: 42163813</p><br>
+            <p>Privacy Policy</p><br>
+        </div>
+        <div id="footer-Logo-Box">
+            <img src="./images/semple.png">
+        </div>
+        <div id="footer-Newsletter-Box">
+            <div id="newsletterBox-Content">
+                <h1>Subscribe to our newsletter</h1>
+                <form>
+                    <input type="text" id="email" name="email">
+                    
+                </form>
+                <button type="button" id="newsletter-SubmitButton" onclick="alert('You have successfully subscribed to our newsletter')">Click Me!</button>
+            </div>
+        </div>    
     </footer>
 </body>
 
