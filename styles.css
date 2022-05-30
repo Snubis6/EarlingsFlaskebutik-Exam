@@ -588,7 +588,6 @@ text-align: right;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-<<<<<<< Updated upstream
 }
 
 /*ABOUT US PAGE STARTS*/
@@ -618,6 +617,10 @@ text-align: right;
   justify-content: center;
   flex-direction: column;
   text-align:center;
+}
+#staff{
+  margin-top: 2vw;
+  margin-bottom: 10vw;
 }
 #staff-box{
   width:100%;
@@ -655,13 +658,13 @@ text-align: right;
 }
 .findus{
   width: 50%;
+
+}
+
+.some{
+  margin: 0.5vw;
+}
+.mapouter{
+  margin-top: 1vw;
 }
 /*ABOUT US PAGE ENDS*/
-=======
-  padding-bottom: 1vw;
-}
-
-.formsubmit {
-
-}
->>>>>>> Stashed changes
