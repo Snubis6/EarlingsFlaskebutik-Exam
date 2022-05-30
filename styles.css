@@ -588,8 +588,22 @@ text-align: right;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-<<<<<<< Updated upstream
 }
+
+#formsubmit {
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.5vw;
+  border-color:  #701578;
+  border-radius: 0.1vw;
+  cursor: pointer;
+  }
+
+#formsubmit:hover {
+  background-color: #90199b36; 
+  color: #1c051e;
+}
+
 
 /*ABOUT US PAGE STARTS*/
 .about-box{
@@ -657,11 +671,3 @@ text-align: right;
   width: 50%;
 }
 /*ABOUT US PAGE ENDS*/
-=======
-  padding-bottom: 1vw;
-}
-
-.formsubmit {
-
-}
->>>>>>> Stashed changes
