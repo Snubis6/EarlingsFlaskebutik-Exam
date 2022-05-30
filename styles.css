@@ -588,7 +588,6 @@ text-align: right;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-<<<<<<< Updated upstream
 }
 
 /*ABOUT US PAGE STARTS*/
@@ -657,11 +656,3 @@ text-align: right;
   width: 50%;
 }
 /*ABOUT US PAGE ENDS*/
-=======
-  padding-bottom: 1vw;
-}
-
-.formsubmit {
-
-}
->>>>>>> Stashed changes

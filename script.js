@@ -3,8 +3,8 @@ const form = document.getElementById("tagSearch");
 const searchTag = document.querySelector('.tagsSubmitBtn');
 const btnTag = document.getElementById("tags-submit");
 const clearTag = document.getElementById("tags-clear");
-const aleTag = document.getElementById("tags-Ale");
-const lagerTag = document.getElementById("tags-Lager");
+const aleTag = document.querySelector('.tagsAleBtn');
+const lagerTag = document.querySelector('.tagsLagerBtn');
 let productBox = "";
 
 
@@ -27,21 +27,25 @@ document.getElementById("No").onclick = function () {
 
 
 };
-window.onload = function(e)
-{
-  e.preventDefault();
+ window.onload = function(e)
+ {
+   e.preventDefault();
     
-    for( const product of products){
-      productBox = `
-      <div class="box-Product" id="productBox">
-        <img style="width: 100px; height: 200px;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
-        <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
-        <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
-        <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
-      </div>
-      `;
-      productContainer.insertAdjacentHTML("beforeend", productBox);
-}};
+     productContainer.innerHTML="";
+     for( const product of products){
+       productBox = `
+       <div class="box-Product" id="productBox">
+         <img style="width: 100px; height: 200px;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
+         <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
+         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
+       </div>
+       `;
+       productContainer.insertAdjacentHTML("beforeend", productBox);
+      
+ }
+
+ };
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("newsletter-SubmitButton");
@@ -69,7 +73,7 @@ aleTag.onclick = function(a) {
     a.preventDefault();
     productContainer.innerHTML="";
     for( const product of products){
-      if( product.type == String("Ale")){
+      if( product.type == String('Ale')){
       productBox = `
       <div class="box-Product" id="productBox">
         <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
@@ -81,50 +85,18 @@ aleTag.onclick = function(a) {
       productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
 
-// function validInput(searchTag){
-//   let value = e.target.value
-//   if ( value.trim() ){
-//     value = value.trim().toLowerCase()
-//     return true;
-//   } else{  
-//     return false;
-//   }
-// }
-
-// searchTag.addEventListener("tagsSubmitBtn", (e) => {
-//   let value = e.target.value
-//   if ( value.trim() ){
-//     value = value.trim().toLowerCase()
-//   } else{ }
-
-// });
-
-// clearTag.addEventListener("click", () =>{
-
-// });
-
-
-
-
-// searchTag.addEventListener("tagsSubmitBtn", function (e){
-//   e.preventDefault();
-//   //const inputValid = validInput(searchTag.value);
-//   //if(inputValid){
-//     productContainer.innerHTML="";
-//     for( const product of products){
-//       productBox = `
-//       <div class="box-Product" id="productBox">
-//         <img style="width: 100px; height: 200px;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
-//         <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
-//         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
-//         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
-//       </div>
-//       `;
-//       productContainer.insertAdjacentHTML("beforeend", productBox);
-    
-
-//   }
-
-// });
-
-
+lagerTag.onclick = function(a) {
+  a.preventDefault();
+  productContainer.innerHTML="";
+  for( const product of products){
+    if( product.type == String('Lager')){
+    productBox = `
+    <div class="box-Product" id="productBox">
+      <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
+      <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+      <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
+      <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
+    </div>
+    `;
+    productContainer.insertAdjacentHTML("beforeend", productBox);
+}}};
