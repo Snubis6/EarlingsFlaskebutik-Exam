@@ -748,6 +748,10 @@ display: flex;
   margin-top: 2vw;
   margin-bottom: 10vw;
 }
+#staff h1{
+  margin-bottom: 3%;
+  color: purple;
+}
 #staff-box{
   width:100%;
   display: flex;
@@ -764,8 +768,11 @@ display: flex;
 }
 .staffname{
   font-family: 'Franklin Gothic Book';
+  color: purple;
 }
-
+#aboutshop h1{
+  color: purple;
+}
 #contact{
   width:100%;
   background-size:cover ;
@@ -773,6 +780,9 @@ display: flex;
   display: flex;
   padding-bottom: 10vw;
 
+}
+#contact h1{
+ color: purple;
 }
 .openinghours{
   width: 50%;
