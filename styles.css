@@ -692,6 +692,16 @@ display: flex;
 
 */
 /*ABOUT US PAGE STARTS*/
+
+.abouttextleft{
+  position: relative;
+  animation: mymove 1s;
+}
+@keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: 100%;}
+}
+
 .about-box{
   width:100%;
   background-size:cover ;
