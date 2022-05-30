@@ -5,46 +5,10 @@ const btnTag = document.getElementById("tags-submit");
 const clearTag = document.getElementById("tags-clear");
 const aleTag = document.querySelector('.tagsAleBtn');
 const lagerTag = document.querySelector('.tagsLagerBtn');
-let productBox = "";
-
-
-window.onload = function(e){
-  e.preventDefault();
-document.getElementById("Yes").onclick = function () {
-  
-    location.href = "./entrance.html";
-};};
-window.onload = function(e){
-  e.preventDefault();     
-document.getElementById("No").onclick = function () {    
-  if (document.getElementById("question-Box").style.display === "none") {
-    document.getElementById("question-Box").style.display = "block";
-  } else {
-    document.getElementById("question-Box").style.display = "none";
-    document.getElementById("no-Box").style.display = "block";
-  };
-    
-};};
-
-window.onload = function(e){
-    e.preventDefault();    
-    productContainer.innerHTML="";
-      for( const product of products){
-        productBox = `
-       <div class="box-Product" id="productBox">
-         <img style="width: 100px; height: 200px;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
-         <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
-         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
-         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
-       </div>
-       `;
-       productContainer.insertAdjacentHTML("beforeend", productBox);
-      
-};};
-
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("newsletter-SubmitButton");
 var span = document.getElementsByClassName("close")[0];
+let productBox = "";
 
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
@@ -64,8 +28,43 @@ window.onclick = function(event) {
   };
 };
 
-aleTag.onclick = function(a) {
-    a.preventDefault();
+window.onload = function(){
+  
+document.querySelector("yesBTN").onclick = function () {
+  
+  location.href = "./entrance.html";
+};
+
+document.querySelector("noBtn").onclick = function () {    
+if (document.getElementById("question-Box").style.display === "none") {
+  document.getElementById("question-Box").style.display = "block";
+} else {
+  document.getElementById("question-Box").style.display = "none";
+  document.getElementById("no-Box").style.display = "block";
+};
+  
+}};
+
+
+window.onload = function(){
+productContainer.innerHTML="";
+  for( const product of products){
+    productBox = `
+      <div class="box-Product" id="productBox">
+        <img style="width: 100px; height: 200px;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
+        <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+        <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
+        <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
+      </div>
+      `;
+       productContainer.insertAdjacentHTML("beforeend", productBox);
+}};
+
+
+
+
+aleTag.onclick = function(d) {
+    d.preventDefault();
     productContainer.innerHTML="";
     for( const product of products){
       if( product.type == String('Ale')){
@@ -80,8 +79,8 @@ aleTag.onclick = function(a) {
       productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
 
-lagerTag.onclick = function(a) {
-  a.preventDefault();
+lagerTag.onclick = function(d) {
+  d.preventDefault();
   productContainer.innerHTML="";
   for( const product of products){
     if( product.type == String('Lager')){
@@ -95,3 +94,4 @@ lagerTag.onclick = function(a) {
     `;
     productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
+
