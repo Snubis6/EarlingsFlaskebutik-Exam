@@ -8,27 +8,25 @@ const lagerTag = document.querySelector('.tagsLagerBtn');
 let productBox = "";
 
 
-window.onload = function(){
+window.onload = function(e){
+  e.preventDefault();
 document.getElementById("Yes").onclick = function () {
+  
     location.href = "./entrance.html";
-    
-};
-     
+};};
+window.onload = function(e){
+  e.preventDefault();     
 document.getElementById("No").onclick = function () {    
   if (document.getElementById("question-Box").style.display === "none") {
     document.getElementById("question-Box").style.display = "block";
   } else {
     document.getElementById("question-Box").style.display = "none";
     document.getElementById("no-Box").style.display = "block";
-  } 
+  };
     
-};
+};};
 
-
-
-};
- window.onload = function(e)
- {
+window.onload = function(e){
     e.preventDefault();    
     productContainer.innerHTML="";
       for( const product of products){
@@ -42,9 +40,7 @@ document.getElementById("No").onclick = function () {
        `;
        productContainer.insertAdjacentHTML("beforeend", productBox);
       
- };
-
- };
+};};
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("newsletter-SubmitButton");
@@ -53,19 +49,19 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal 
 btn.onclick = function() {
   modal.style.display = "block";
-}
+};
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
   modal.style.display = "none";
-}
+};
 
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
 
-  }
+  };
 };
 
 aleTag.onclick = function(a) {
@@ -99,8 +95,3 @@ lagerTag.onclick = function(a) {
     `;
     productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
-
-
-
-
-

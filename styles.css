@@ -26,11 +26,11 @@ body{
 #no-Box{
     display: none;
     position: fixed;
-    top: 35vh;
+    top: 15vh;
     background-color: blueviolet;
     text-align: center;
     width: 60vw;
-    height: 25vh;
+    height: auto;
     margin-left: 20vw;
     margin-right: 20vw;
     font-size: 2vh;
