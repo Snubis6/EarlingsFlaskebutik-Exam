@@ -579,3 +579,70 @@ text-align: right;
   flex-direction: row;
   justify-content: space-between;
 }
+
+/*ABOUT US PAGE STARTS*/
+.about-box{
+  width:100%;
+  background-size:cover ;
+  height: fit-content;
+  display: flex;
+  padding-bottom: 10vw;
+}
+.aboutimg{
+  width: 59%;
+}
+.abouttextleft{
+  width: 50%;
+  padding-left: 5vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align:center;
+}
+
+.abouttextright{
+  width: 50%;
+  padding-right: 5vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align:center;
+}
+#staff-box{
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  
+}
+.staffcard{
+  width: 15vw;
+  
+}
+.profilepic{
+  width: 15vw;
+}
+.staffname{
+  font-family: 'Franklin Gothic Book';
+}
+
+#contact{
+  width:100%;
+  background-size:cover ;
+  height: fit-content;
+  display: flex;
+  padding-bottom: 10vw;
+
+}
+.openinghours{
+  width: 50%;
+  padding-left: 5vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align:center;
+}
+.findus{
+  width: 50%;
+}
+/*ABOUT US PAGE ENDS*/
