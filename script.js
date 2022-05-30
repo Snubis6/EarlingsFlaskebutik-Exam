@@ -29,11 +29,10 @@ document.getElementById("No").onclick = function () {
 };
  window.onload = function(e)
  {
-   e.preventDefault();
-    
-     productContainer.innerHTML="";
-     for( const product of products){
-       productBox = `
+    e.preventDefault();    
+    productContainer.innerHTML="";
+      for( const product of products){
+        productBox = `
        <div class="box-Product" id="productBox">
          <img style="width: 100px; height: 200px;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
          <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
@@ -43,7 +42,7 @@ document.getElementById("No").onclick = function () {
        `;
        productContainer.insertAdjacentHTML("beforeend", productBox);
       
- }
+ };
 
  };
 
