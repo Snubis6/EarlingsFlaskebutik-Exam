@@ -633,6 +633,10 @@ text-align: right;
   flex-direction: column;
   text-align:center;
 }
+#staff{
+  margin-top: 2vw;
+  margin-bottom: 10vw;
+}
 #staff-box{
   width:100%;
   display: flex;
@@ -669,5 +673,13 @@ text-align: right;
 }
 .findus{
   width: 50%;
+
+}
+
+.some{
+  margin: 0.5vw;
+}
+.mapouter{
+  margin-top: 1vw;
 }
 /*ABOUT US PAGE ENDS*/
