@@ -1,3 +1,13 @@
+const productContainer = document.querySelector(".product-Contents-Box");
+const form = document.getElementById("tagSearch");
+const searchTag = document.querySelector('.tagsSubmitBtn');
+const btnTag = document.getElementById("tags-submit");
+const clearTag = document.getElementById("tags-clear");
+const aleTag = document.getElementById("tags-Ale");
+const lagerTag = document.getElementById("tags-Lager");
+let productBox = "";
+
+
 window.onload = function(){
 document.getElementById("Yes").onclick = function () {
     location.href = "./entrance.html";
@@ -17,6 +27,21 @@ document.getElementById("No").onclick = function () {
 
 
 };
+window.onload = function(e)
+{
+  e.preventDefault();
+    
+    for( const product of products){
+      productBox = `
+      <div class="box-Product" id="productBox">
+        <img style="width: 100px; height: 200px;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
+        <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+        <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
+        <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
+      </div>
+      `;
+      productContainer.insertAdjacentHTML("beforeend", productBox);
+}};
 
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("newsletter-SubmitButton");
@@ -38,18 +63,68 @@ window.onclick = function(event) {
     modal.style.display = "none";
 
   }
-}
-btn.addEventListener('click', function handleClick(event) {
-  
-  event.preventDefault();
+};
 
-  const email = document.getElementById('email');
+aleTag.onclick = function(a) {
+    a.preventDefault();
+    productContainer.innerHTML="";
+    for( const product of products){
+      if( product.type == String("Ale")){
+      productBox = `
+      <div class="box-Product" id="productBox">
+        <img style="width: 100px; height: auto;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
+        <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+        <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
+        <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
+      </div>
+      `;
+      productContainer.insertAdjacentHTML("beforeend", productBox);
+}}};
 
-  email.value = '';
-});
-// window.onload = function() {
-//   if (document.getElementsByClassName("Header").style.display === "flex") {
-//     document.getElementsByClassName("Header").style.display = "none";
+// function validInput(searchTag){
+//   let value = e.target.value
+//   if ( value.trim() ){
+//     value = value.trim().toLowerCase()
+//     return true;
+//   } else{  
+//     return false;
 //   }
-// };
+// }
+
+// searchTag.addEventListener("tagsSubmitBtn", (e) => {
+//   let value = e.target.value
+//   if ( value.trim() ){
+//     value = value.trim().toLowerCase()
+//   } else{ }
+
+// });
+
+// clearTag.addEventListener("click", () =>{
+
+// });
+
+
+
+
+// searchTag.addEventListener("tagsSubmitBtn", function (e){
+//   e.preventDefault();
+//   //const inputValid = validInput(searchTag.value);
+//   //if(inputValid){
+//     productContainer.innerHTML="";
+//     for( const product of products){
+//       productBox = `
+//       <div class="box-Product" id="productBox">
+//         <img style="width: 100px; height: 200px;" src="${product.image}" class="box-Product-Image" id="productBoxImage"><br>
+//         <p class="box-Product-Name" id="productBoxName">${product.name}</p><br>
+//         <p class="box-Product-Description" id="productBoxDescription">${product.subtype}</p><br>
+//         <p class="box-Product-Price" id="productBoxPrice">${product.price}</p>
+//       </div>
+//       `;
+//       productContainer.insertAdjacentHTML("beforeend", productBox);
+    
+
+//   }
+
+// });
+
 

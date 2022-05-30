@@ -30,26 +30,23 @@
             <p>If you want to order bigger amount please fill out our <a href="#" style="text-decoration:underline;">form!</a></p>            
         </div>
         <div id="search-Box-Products">
-            <form>
-                <input input type="text" id="tags" name="tags"></input>
-                <button type="button" id="tags-submit">Confirm</button>
+            <form id="tagSearch">
+                <input input type="text" id="tags" class="tagSearchBar" name="tags"></input>
+                <button type="submit" id="tags-submit" class="tagsSubmitBtn">Confirm</button>
+                <button type="submit" id="tags-clear" class="tagsClearBtn">Clear</button>
+                <button type="submit" id="tags-ale" class="tagsAleBtn">Ale</button>
+                <button type="submit" id="tags-lager" class="tagsLagerBtn">Lager</button>
+                
             </form>
         </div>
-        <div id="product-Contents-Box">
-            <div id="b1"></div>
-            <div id="b2"></div>
-            <div id="b3"></div>
-            <div id="b4"></div>
-            <div id="b1"></div>
-            <div id="b2"></div>
-            <div id="b3"></div>
-            <div id="b4"></div>
-            <div id="b1"></div>
-            <div id="b2"></div>
-            <div id="b3"></div>
-            <div id="b4"></div>
+        <div class="product-Contents-Box" id="product-Contents-Box">
+            <!-- <div class="box-Product" id="productBox">                
+                <img style="width: 100px; height: 200px;" src="./images/Products/1.png" class="box-Product-Image" id="productBoxImage"><br>
+                <p class="box-Product-Name" id="productBoxName">Test</p><br>
+                <p class="box-Product-Description" id="productBoxDescription"> test</p><br>
+                <p class="box-Product-Price" id="productBoxPrice">test</p>                
+            </div>             -->
         </div>
-           
     </div>
 
     <div id="myModal" class="modal">
@@ -61,7 +58,7 @@
                 <p>Now that it is done it's time to check out our <a href="./products.html" style="text-decoration: underline;  color:blueviolet;">product selection!</a></p>
             </div>
         </div>      
-      </div>
+    </div>
     <footer>
         <img id="footer-Img" src="./images/Footer.svg"></img>
         <div id="footer-Text-Box">
@@ -89,4 +86,5 @@
 
 
 <script src="./script.js"></script>
+<script src="./data.js"></script>
 </html>
