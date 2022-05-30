@@ -563,17 +563,21 @@ footer{
 
 /*FORM*/
 
+
+
 #form {
 max-width:100%;
 margin-bottom: 10vw;
 margin-left: auto;
 margin-right: auto;
 margin-top: 0%;
+
 }
 
  #form label {
    color:#fff;
-   padding-right: 30%;
+   
+   font-family: 'Franklin Gothic Book';
  }
 
 .textinput {
@@ -581,15 +585,44 @@ width: 13vw;
 height: 1.2vw;
 justify-content: end;
 display: flex;
-text-align: right;
-}
 
+}
+.label{
+  margin-right: 80px ;
+  justify-content: left;
+}
 .formstyle {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content:right;
+  align-items: center;
 }
-
+.formstyleProducts{
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: end;
+}
+.beerandcan{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content:end;
+  height: 165px;
+  
+}
+.formstyleProducts label{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  margin-right: 7vw;
+}
+.beerandcan input{
+  width: 3vw;
+}
 #formsubmit {
   color: #ffffff;
   background-color: transparent;
