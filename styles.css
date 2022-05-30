@@ -564,7 +564,7 @@ footer{
 /*FORM*/
 
 #form {
-max-width: 50%;
+max-width:100%;
 margin-bottom: 10vw;
 margin-left: auto;
 margin-right: auto;
@@ -577,7 +577,7 @@ margin-top: 0%;
  }
 
 .textinput {
-width: 10vw;
+width: 13vw;
 height: 1.2vw;
 justify-content: end;
 display: flex;
@@ -588,6 +588,7 @@ text-align: right;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+<<<<<<< Updated upstream
 }
 
 /*ABOUT US PAGE STARTS*/
@@ -656,3 +657,11 @@ text-align: right;
   width: 50%;
 }
 /*ABOUT US PAGE ENDS*/
+=======
+  padding-bottom: 1vw;
+}
+
+.formsubmit {
+
+}
+>>>>>>> Stashed changes
