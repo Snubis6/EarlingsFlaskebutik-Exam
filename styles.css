@@ -569,9 +569,56 @@ footer{
 
 /*FORM*/
 
-
-
 #form {
+  display: table;
+}
+
+.formstyle {
+  display: table-row;
+}
+
+#form label, input {
+  display: table-cell;
+
+}
+
+
+#form label {
+  padding-right: 5vw;
+  color: #fff;
+  font-size: 1.5vw;
+  padding-bottom: 2vw;
+}
+
+
+
+#formsubmit {
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.5vw;
+  border-color:  #701578;
+  border-radius: 0.1vw;
+  cursor: pointer;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 4vw;
+  }
+
+#formsubmit:hover {
+  background-color: #90199b36; 
+  color: #1c051e;
+}
+#form {
+  max-width:100%;
+  margin-bottom: 10vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0%;
+}  
+
+/*#form {
 max-width:100%;
 margin-bottom: 10vw;
 margin-left: auto;
@@ -643,8 +690,18 @@ display: flex;
   color: #1c051e;
 }
 
-
+*/
 /*ABOUT US PAGE STARTS*/
+
+.abouttextleft{
+  position: relative;
+  animation: mymove 1s;
+}
+@keyframes mymove {
+  from {opacity: 0;}
+  to {opacity: 100%;}
+}
+
 .about-box{
   width:100%;
   background-size:cover ;
@@ -722,3 +779,5 @@ display: flex;
   margin-top: 1vw;
 }
 /*ABOUT US PAGE ENDS*/
+
+

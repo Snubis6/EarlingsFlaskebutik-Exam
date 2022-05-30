@@ -99,3 +99,8 @@ lagerTag.onclick = function(a) {
     `;
     productContainer.insertAdjacentHTML("beforeend", productBox);
 }}};
+
+
+
+
+
