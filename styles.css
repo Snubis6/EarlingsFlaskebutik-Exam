@@ -590,6 +590,21 @@ text-align: right;
   justify-content: space-between;
 }
 
+#formsubmit {
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 1.5vw;
+  border-color:  #701578;
+  border-radius: 0.1vw;
+  cursor: pointer;
+  }
+
+#formsubmit:hover {
+  background-color: #90199b36; 
+  color: #1c051e;
+}
+
+
 /*ABOUT US PAGE STARTS*/
 .about-box{
   width:100%;
@@ -617,6 +632,10 @@ text-align: right;
   justify-content: center;
   flex-direction: column;
   text-align:center;
+}
+#staff{
+  margin-top: 2vw;
+  margin-bottom: 10vw;
 }
 #staff-box{
   width:100%;
@@ -654,5 +673,13 @@ text-align: right;
 }
 .findus{
   width: 50%;
+
+}
+
+.some{
+  margin: 0.5vw;
+}
+.mapouter{
+  margin-top: 1vw;
 }
 /*ABOUT US PAGE ENDS*/
