@@ -132,12 +132,12 @@ body{
   margin-top: 10vh;
   width: 70%
 }
-#content-Box p{
+#mainWelcome{
   margin-top: 2vh;
   font-size: 3vh;
   
 }
-#content-Box h1{
+#mainHeading{
   color: purple;
   font-size: 6.2vh;
 }
@@ -147,26 +147,32 @@ body{
   margin-bottom: 30vh;
 }
 .article-Box{
-  width: 100%;
-  height: auto;
+  
   position: relative;
   margin-bottom: 30vh;
+}
+
+.articleHeadline{
+  font-size: 1.6vw;
+  color: purple;
+}
+.articleParagraph{
+  font-size: 0.9;
+  color: #000;
 }
 .content-Image-Article-Box{
   position: absolute;
   width: 400px;
   height: 250px;
-  background-color: #e60073;
   top: 5.5vh;
   left: 2vw;
 }
 .content-Text-Article-Box{
   position: absolute;
-  right: 2vw;
-  top: 5.5vh;
-  width: 400px;
-  height: 250px;
-  background-color: aqua;
+  right: 8vw;
+  top: 10vh;
+  width: 40%;
+  height: 10%;
 }
 .instagram-Iframes iframe{
   padding-left: 40px;
