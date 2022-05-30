@@ -19,6 +19,7 @@
             height: 1080px;
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
             scroll-snap-align: start;
             scroll-behavior: smooth;
@@ -30,24 +31,26 @@
             height: 1080px;
         }
         .first{
-            background-image:url(images/Main.jpg)
+            background-image:url(images/Main.jpg);
         }
         .second{
-            background-image:url(images/Lager.jpg)
+            background-image:url(images/Lager.jpg);
+
+            
         }
         .third{
-            background-image:url(images/Ale.png)
+            background-image:url(images/Ale.png);
         }
         h1{
             align-items: center;
         }
         .sidenav {
-  
+            
             width: 130px;
             position: fixed;
             z-index: 1;
-            top: 40%;
-            left: 10px;
+            top: 40vh;
+            left: 4vw;
             overflow-x: hidden;
             padding: 8px 0;
         }
@@ -82,7 +85,7 @@
     <!--Container for the whole background-->
     <div class="page.container">
             <!--Main part-->
-            <section class="first">
+            <section id="first" class="first">
                 <h1>Beer types</h1><br>
                 <p>Everybody knows what beer is, it’s hard not to, if you passed 18. <br> 
                     But do we actually know it? Probably not fully. <br>
@@ -96,7 +99,7 @@
                     </p>
             </section>
             <!--Lager part-->
-            <section class="second">
+            <section id="second" class="second">
                 <h1>Lager</h1>
                 <p>Lager, coming from the German word Lagerbier referred to the <br>
                     bottom-fermented, cool-conditioned beer. It is considered <br>
@@ -110,10 +113,11 @@
                         <li>Pilsner Urquell (Czech Republic)</li>
                         <li>Tsingtao (China)</li>
                     </ul>
-                    <!-- One day when I'll be smarter I can finish this too
+
+<!--                     
                         <div class="container">
-                        <button type="button" class="btn btn-info btn-lg" id="myBtn">Click here</button>
-                         <div class="modal fade" id="myModal" role="dialog">
+                        <button type="button" class="btn btn-info btn-lg" id="beerBtn">Click here</button>
+                         <div class="modal fade" id="beerModal" role="dialog">
                           <div class="modal-dialog">
                           
                             <div class="modal-content">
@@ -143,7 +147,7 @@
                                     Famous Hells:		<br>
                                     <ul><li>-   Löwenbräu</li>
                                         <li>-	Penn Brewery Gold</li>
-                                        <li-	Hofbräu München></li>
+                                        <li>-	Hofbräu München></li>
                                     </ul>
 
                                     Märzen/Märzenbier
@@ -206,7 +210,7 @@
                 </p> 
             </section>
             <!--Ale part-->
-            <section class="third">
+            <section id="third" class="third">
                 <h1>Ale</h1>
                 <p>The warm fermented ale is a type of beer that referred to a drink without hops. <br>
                     Most of them has a stronger bitter taste, and with that a usually stronger <br>
@@ -298,7 +302,7 @@
                 <a href="#first">Intro</a>
                 <a href="#second">Lager</a>
                 <a href="#third">Ale</a>
-              </div>
+            </div>
 
         </div>
     
@@ -339,19 +343,19 @@
             </div>
         </div>    
     </footer>
-    <script src="./script.js"></script>
-<!-- For Modal later
+    <script src="./script.js">
+
         $(document).ready(function(){
-            $("myBtn").click(function(){
-                $("myModal").modal();
-            })
-        })
-        $(document).ready(function(){
-  $("#myBtn").click(function(){
-    $("#myModal").modal();
-  });
-});-->
-    
+             $("beerBtn").click(function(){
+                 $("beerModal").modal();
+             })
+         })
+//          $(document).ready(function(){
+//    $("#myBtn").click(function(){
+//      $("#myModal").modal();
+//    });
+
+</script>    
     
 </body>
 </html>
